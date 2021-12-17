@@ -1,3 +1,5 @@
+// ignore_for_file: sized_box_for_whitespace
+
 import 'package:flutter/material.dart';
 import 'package:flutter_signin_button/flutter_signin_button.dart';
 
@@ -23,17 +25,18 @@ class Begining extends StatelessWidget {
                 width: 428,
               ),
               Positioned(
-                  top: 500,
+                  bottom: 30,
                   // left: 70,
                   child: Padding(
                     padding: const EdgeInsets.fromLTRB(60.0, 0, 60.0, 0),
                     child: Container(
                       width: 273,
                       height: 70.0,
-                      child: Text(
-                        'A new way to share your journey',
+                      child: const Text(
+                        'A new way to share\nyour journey',
                         style: TextStyle(
-                          fontSize: 30.0,
+                          fontSize: 22.0,
+                          fontWeight: FontWeight.bold,
                           // fontStyle: FontStyle.
                         ),
                         // word
