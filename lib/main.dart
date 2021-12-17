@@ -21,31 +21,31 @@ class Begining extends StatelessWidget {
             children: [
               Image.asset(
                 'assests/image 1.png',
-                height: 634,
+                height: 600,
                 width: 428,
               ),
               Positioned(
-                  bottom: 30,
+                  bottom: 55,
                   // left: 70,
                   child: Padding(
                     padding: const EdgeInsets.fromLTRB(60.0, 0, 60.0, 0),
                     child: Container(
                       width: 273,
-                      height: 70.0,
+                      height: 60.0,
                       child: const Text(
                         'A new way to share\nyour journey',
                         style: TextStyle(
-                          fontSize: 22.0,
-                          fontWeight: FontWeight.bold,
-                          // fontStyle: FontStyle.
-                        ),
+                            fontSize: 25.0,
+                            fontWeight: FontWeight.bold,
+                            fontFamily: 'Roboto'
+                            // fontStyle: FontStyle.
+                            ),
                         // word
                       ),
                     ),
                   ))
             ],
           ),
-          // SizedBox(height: 6.0),
           FractionallySizedBox(
             widthFactor: 0.8,
             child: FlatButton(
@@ -55,19 +55,22 @@ class Begining extends StatelessWidget {
               onPressed: () {},
               child: Text(
                 'Continue with Phone Number',
+                style: TextStyle(fontFamily: 'Roboto'),
               ),
               color: Colors.blueAccent,
               textColor: Colors.white,
             ),
           ),
+          // SizedBox(height: 6.0),
           Text(
             'or',
             style: TextStyle(
               fontSize: 22.0,
+              color: Colors.grey,
               // color:
             ),
           ),
-          // RaisedButton.icon(onPressed: () {}, icon: Icons., label: )
+          // // RaisedButton.icon(onPressed: () {}, icon: Icons., label: )
           FractionallySizedBox(
             widthFactor: 0.8,
             child: SignInButton(
@@ -78,8 +81,11 @@ class Begining extends StatelessWidget {
               ),
             ),
           ),
-          // Text(
-          //     'By continuing, you agree to our terms and conditions and privacy policy')
+          Padding(
+            padding: const EdgeInsets.all(10.0),
+            child: Text(
+                'By continuing, you agree to our terms and conditions and privacy policy'),
+          )
 // with custom text
           // SignInButton(
           //   Buttons.Google,
