@@ -5,12 +5,12 @@ import 'package:flutter_signin_button/flutter_signin_button.dart';
 
 void main() {
   runApp(MaterialApp(
-    home: Begining(),
+    home: Landing(),
   ));
 }
 
-class Begining extends StatelessWidget {
-  const Begining({Key? key}) : super(key: key);
+class Landing extends StatelessWidget {
+  const Landing({Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
